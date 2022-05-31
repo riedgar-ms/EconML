@@ -59,5 +59,6 @@ def main():
     analysis.fit(X_train, y_train)
     print("Fit complete")
 
+
 if __name__ == "__main__":
     main()
