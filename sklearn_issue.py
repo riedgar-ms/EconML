@@ -49,6 +49,14 @@ def main():
         random_state=100,
     )
 
+    # Extract X_train, y_train
+    print("Extracting X_train, X_test, y_train")
+    X_train = data_train.drop([target_feature], axis=1)
+    y_train = data_train[target_feature].values.ravel()
+
+    # Fit the analysis
+    print("Fitting analysis")
+
 
 if __name__ == "__main__":
     main()
